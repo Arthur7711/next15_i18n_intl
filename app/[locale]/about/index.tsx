@@ -1,3 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default async function About() {
-  return <h1>About Page</h1>;
+  const t = useTranslations();
+
+  return <h1>{t("about_title")}</h1>;
 }
